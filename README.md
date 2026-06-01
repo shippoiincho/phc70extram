@@ -5,7 +5,7 @@ PHC-70FD/FD2 の RAM を 512KB に拡張します
 
 回路図を起こすか、添付のガーバデータを基板屋に発注します。
 
-![Schematics](/pictures/phcram02.png)
+![Schematics](/phcram02.png)
 
 その他必要なものは以下の通りです
 
@@ -38,7 +38,7 @@ MSX-Engine の近くにメモリサイズを決めているジャンパーが2�
 これを切り替えます。
 どちらも 1-3 と接続されているはずですので、これを両方とも 1-2 に切り替えます。
 
-![MSX-Engine](/pictures/phcram00.jpg)
+![MSX-Engine](/phcram00.jpg)
 
 
 
