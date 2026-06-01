@@ -1,2 +1,45 @@
-# phc70extram
-PHC-70FD 512KB expansion RAM
+# これはなに？
+PHC-70FD/FD2 の RAM を 512KB に拡張します
+
+# 必要なもの
+
+回路図を起こすか、添付のガーバデータを基板屋に発注します。
+
+![Schematics](/pictures/phcram02.png)
+
+その他必要なものは以下の通りです
+
+- [4MBit D-RAM M11B416256A-35J](https://akizukidenshi.com/catalog/g/g101451/)
+- [丸ピン ICソケット 18Pin](https://akizukidenshi.com/catalog/g/g100030/) x 4
+- [連結ICソケット DIP8](https://akizukidenshi.com/catalog/g/g100264/) x 3
+- [連結ICソケット DIP18](https://akizukidenshi.com/catalog/g/g117834/)
+- 線材少々
+
+# 本体の改造
+
+
+## メモリのソケット化
+
+本来のメモリの刺さっている場所を IC ソケット化します。
+スルーホール基板ではないので、はんだ吸い取り器などで簡単に外れます。
+
+半田を外したら 18ピン IC ソケットを装着します。
+(パスコンをつける場所がありますが、つけなくても大丈夫です)
+
+## 信号線の取り出し
+
+512KB 化のために必要な信号線を取り出します。
+基板裏面にある MSX-Engine の 47 番pin には何も接続されていないはずですので、
+ここに適当な線材をはんだ付けして、信号を引き出します。
+
+## ジャンパーの切り替え
+
+MSX-Engine の近くにメモリサイズを決めているジャンパーが2か所存在しているので、
+これを切り替えます。
+どちらも 1-3 と接続されているはずですので、これを両方とも 1-2 に切り替えます。
+
+![MSX-Engine](/pictures/phcram00.jpg)
+
+
+
+
